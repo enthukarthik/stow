@@ -35,12 +35,10 @@ alias ...="cd ../.."
 
 alias h=history
 
-alias  gcc="gcc -Wall -Wextra -Werror -ansi -pedantic -std=c23 -lm"
-alias dgcc="gcc -Wall -Wextra -Werror -ansi -pedantic -std=c23 -lm -g" # debug enabled gcc
-alias agcc="gcc -Wall -Wextra -Werror -ansi -pedantic -std=c23 -lm -fsanitize=address -fsanitize=undefined -fanalyzer" # advanced gcc flags to detect more issues
-alias  g++="g++ -Wall -Wextra -Werror -ansi -pedantic -std=c++17 -lm "
-alias dg++="g++ -Wall -Wextra -Werror -ansi -pedantic -std=c++17 -lm -g"
-alias ag++="g++ -Wall -Wextra -Werror -ansi -pedantic -std=c++17 -lm -fsanitize=address -fsanitize=undefined -fanalyzer"
+alias  gcc="gcc -Wall -Wextra -Werror -pedantic -std=c23 -lm"
+alias agcc="gcc -Wall -Wextra -Werror -pedantic -std=c23 -lm -fsanitize=address -fsanitize=undefined -fanalyzer" # advanced gcc flags to detect more issues
+alias  g++="g++ -Wall -Wextra -Werror -pedantic -std=c++17 -lm "
+alias ag++="g++ -Wall -Wextra -Werror -pedantic -std=c++17 -lm -fsanitize=address -fsanitize=undefined -fanalyzer"
 
 alias clang="clang -Wall -Wextra -Werror -Wpedantic -std=c++17"
 alias aclang="clang -Wall -Wextra -Werror -Wpedantic -std=c++17 -fsanitize=address -fsanitize=undefined -fsanitize=thread -fsanitize=memory"
