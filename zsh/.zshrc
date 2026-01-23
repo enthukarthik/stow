@@ -44,6 +44,9 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 # fzf setup
 source <(fzf --zsh) # allow for fzf history widget
 
+# zoxide setup
+eval "$(zoxide init zsh --cmd cd)"
+
 # Initialize vim mode in zshell
 set -o vi
 
