@@ -9,7 +9,11 @@ export ZDOTDIR="$HOME"
 export EDITOR="nvim"
 
 # if .local/bin exists in the home directory add it to the PATH env var
-if [ -d "$HOME/.local/bin" ]; then
-	export PATH="$HOME/.local/bin":$PATH
+LOCAL_BIN="$HOME/.local/bin"
+
+if [ -d "$LOCAL_BIN" ]; then # if LOCAL_BIN exists
+	if [[ ":$PATH:" != *":$LOCAL_BIN:"* ]]; then # if it doesn't exists already in the PATH env var
+		export PATH="$LOCAL_BIN:$PATH"
+	fi
 fi
 
