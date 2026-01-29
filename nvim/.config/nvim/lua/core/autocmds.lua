@@ -58,6 +58,26 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
 })
 
+-- Make all neovim panels transparent irrespective of whatever colorscheme gets loaded
+vim.api.nvim_create_autocmd("ColorScheme", {
+  pattern = "*",
+  callback = function()
+    local highlights = {
+      "Normal",
+      "NormalNC",
+      "NormalFloat",
+      "FloatBorder",
+      "Pmenu",
+      "SignColumn",
+      "LineNr",
+      "EndOfBuffer",
+    }
+    for _, group in ipairs(highlights) do
+      vim.api.nvim_set_hl(0, group, { bg = "none" })
+    end
+  end,
+})
+
 -- HACK to remove any plugin that sets formatoptions tcro and tw for local buffers
 vim.cmd([[autocmd BufNewFile,BufRead,BufWinEnter * setlocal formatoptions-=t]])
 vim.cmd([[autocmd BufNewFile,BufRead,BufWinEnter * setlocal formatoptions-=c]])
