@@ -10,7 +10,7 @@ return {
     require("bufferline").setup({
       options = {
         mode = "buffers", -- set to "tabs" to only show tabpages instead
-        themable = true, -- allows highlight groups to be overriden i.e. sets highlights as default
+        themable = false, -- allows highlight groups to be overriden i.e. sets highlights as default
         numbers = "ordinal", -- | "ordinal" | "buffer_id" | "both" | function({ ordinal, id, lower, raise }): string,
         close_command = "Bdelete! %d", -- can be a string | function, see "Mouse actions"
         right_mouse_command = "Bdelete! %d", -- can be a string | function, see "Mouse actions"
@@ -49,18 +49,22 @@ return {
         sort_by = "insert_at_end",
       },
       highlights = {
+        background = { bg = 'none' },
+        fill = { bg = 'none' },
         separator = {
+          bg = 'none',
           fg = "#32303f",
         },
         buffer_selected = {
           bold = true,
           italic = false,
+          bg = 'none',
+          fg = '#fab387',
         },
-        -- separator_selected = {},
-        -- tab_selected = {},
-        -- background = {},
-        -- indicator_selected = {},
-        -- fill = {},
+        buffer_visible = { bg = 'none', fg = '#a6adc8' },
+        separator_selected = { bg = 'none' },
+        tab_selected = { bg = 'none' },
+        indicator_selected = { bg = 'none' },
       },
     })
 
