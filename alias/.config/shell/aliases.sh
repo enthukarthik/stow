@@ -42,3 +42,6 @@ alias ag++="g++ -Wall -Wextra -Werror -pedantic -std=c++17 -lm -fsanitize=addres
 
 alias clang="clang -Wall -Wextra -Werror -Wpedantic -std=c++17"
 alias aclang="clang -Wall -Wextra -Werror -Wpedantic -std=c++17 -fsanitize=address -fsanitize=undefined -fsanitize=thread -fsanitize=memory"
+
+alias jj="__zoxide_zi"
+
