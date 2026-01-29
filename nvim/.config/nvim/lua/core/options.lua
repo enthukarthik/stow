@@ -6,8 +6,8 @@ vim.g.loaded_ruby_provider = 0
 
 if vim.g.neovide then
   vim.opt.guifont = "JetBrainsMono Nerd Font:h13"
-  -- vim.g.neovide_transparency = 0.9 -- content and title bar, both should be transparent
-  -- vim.g.transparency = 0.1
+  vim.g.neovide_opacity = 0.7
+  vim.g.neovide_normal_opacity = 0.7
   vim.g.neovide_hide_mouse_when_typing = true
 end
 
