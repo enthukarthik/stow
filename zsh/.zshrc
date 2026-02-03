@@ -26,6 +26,11 @@ autoload -Uz compinit && compinit
 zstyle ':completion:*' menu select # tab opens cmp menu
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS} ma=0\;33 # colorize cmp menu
 setopt no_case_glob no_case_match # make cmp case insensitive
+setopt auto_param_slash # when completing directory add / instead of space
+
+PROMPT_EOL_MARK='%B%F{red}⮒%f%b' # Prevent EOL line marker to output % if the command output is not having new line
+#unsetopt prompt_sp
+#unsetopt prompt_cr
 
 # Turn off autocomplete beeps on ambiguous completion
 # unsetopt LIST_BEEP

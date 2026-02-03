@@ -8,6 +8,18 @@ export XDG_CACHE_HOME="$HOME/.cache"
 export ZDOTDIR="$HOME"
 export EDITOR="nvim"
 
+# export MANPAGER="less -R --use-color -Dd+r -Du+b" # colored man pages
+# export PAGER="bat"
+# colored less + termcap vars
+export LESS="-R --use-color -Dd+r -Du+b"
+# export LESS_TERMCAP_mb="$(printf '%b' '[1;31m')"
+# export LESS_TERMCAP_md="$(printf '%b' '[1;36m')"
+# export LESS_TERMCAP_me="$(printf '%b' '[0m')"
+# export LESS_TERMCAP_so="$(printf '%b' '[01;44;33m')"
+# export LESS_TERMCAP_se="$(printf '%b' '[0m')"
+# export LESS_TERMCAP_us="$(printf '%b' '[1;32m')"
+# export LESS_TERMCAP_ue="$(printf '%b' '[0m')"
+
 # if .local/bin exists in the home directory add it to the PATH env var
 LOCAL_BIN="$HOME/.local/bin"
 

@@ -3,8 +3,8 @@ alias cls="clear"
 alias vim="nvim"
 
 alias la="lsd -alh --color=auto --group-directories-first"
-alias ls="lsd -h --color=auto --group-directories-first"
 alias ll="lsd -alh --color=auto --group-directories-first"
+alias ls="lsd -h --color=auto --group-directories-first"
 
 alias grep="grep --color=auto"
 
