@@ -8,8 +8,8 @@ export XDG_CACHE_HOME="$HOME/.cache"
 export ZDOTDIR="$HOME"
 export EDITOR="nvim"
 
-# export MANPAGER="less -R --use-color -Dd+r -Du+b" # colored man pages
-# export PAGER="bat"
+export MANPAGER="nvim +Man!"
+# export PAGER="nvim +Man!"
 # colored less + termcap vars
 export LESS="-R --use-color -Dd+r -Du+b"
 # export LESS_TERMCAP_mb="$(printf '%b' '[1;31m')"

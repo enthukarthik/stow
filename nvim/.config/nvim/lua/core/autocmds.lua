@@ -50,13 +50,13 @@ end,
 })
 
 -- Enable highlights for my preferred languages through tree sitter
-vim.api.nvim_create_autocmd("FileType", {
-  desc = "Enable tree sitter highlighting for some of the frequent languages that I use",
-  pattern = { "asm", "c", "cpp", "cs", "haskell", "python", "rust" },
-  callback = function()
-    vim.treesitter.start()
-  end,
-})
+-- vim.api.nvim_create_autocmd("FileType", {
+--   desc = "Enable tree sitter highlighting for some of the frequent languages that I use",
+--   pattern = { "asm", "c", "cpp", "cs", "haskell", "python", "rust" },
+--   callback = function()
+--     vim.treesitter.start()
+--   end,
+-- })
 
 -- Make all neovim panels transparent irrespective of whatever colorscheme gets loaded
 vim.api.nvim_create_autocmd("ColorScheme", {
