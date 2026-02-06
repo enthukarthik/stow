@@ -2373,6 +2373,7 @@ set print array-indexes on
 set python print-stack full
 set disassembly-flavor intel
 set debuginfod enabled on
+set auto-load safe-path /home/rkarthik/.cache/
 
 # Start ------------------------------------------------------------------------
 
