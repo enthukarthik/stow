@@ -68,8 +68,24 @@ bindkey -v '^p' history-search-backward
 bindkey -v '^n' history-search-forward
 bindkey -v '^k' kill-whole-line
 
-eval "$(starship init zsh)"
-export STARSHIP_CONFIG=~/.config/starship.toml
+# eval "$(starship init zsh)"
+# export STARSHIP_CONFIG=~/.config/starship.toml
 #starship preset catppuccin-powerline -o ~/.config/starship.toml
 #starship preset gruvbox-rainbow -o ~/.config/starship.toml
 #starship preset pastel-powerline -o ~/.config/starship.toml
+
+# ZSH=/usr/share/oh-my-zsh/
+# ZSH_THEME="robbyrussell"
+# HYPHEN_INSENSITIVE="true"
+# zstyle ':omz:update' mode reminder  # just remind me to update when it's time
+# # Uncomment the following line if pasting URLs and other text is messed up.
+# # DISABLE_MAGIC_FUNCTIONS="true"
+# COMPLETION_WAITING_DOTS="true"
+# plugins=(git archlinux)
+# ZSH_CACHE_DIR=$XDG_CACHE_HOME/oh-my-zsh
+# if [[ ! -d $ZSH_CACHE_DIR ]]; then
+#   mkdir $ZSH_CACHE_DIR
+# fi
+#
+# source $ZSH/oh-my-zsh.sh
+eval "$(oh-my-posh init zsh --config "powerlevel10k_rainbow")"
